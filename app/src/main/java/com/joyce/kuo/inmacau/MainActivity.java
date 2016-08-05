@@ -16,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void click1(View v)
+    public void click_view(View v)
     {
 
         Intent it =new Intent(MainActivity.this,MapActivity.class);
         startActivity(it);
     }
 
-    public void click2(View v)
+    public void click_trip(View v)
     {
         Intent it=new Intent(MainActivity.this,TripActivity.class);
         startActivity(it);
@@ -31,17 +31,22 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void click3(View v)
+    public void click_ticket(View v)
     {
        Uri uri=Uri.parse("http://www.backpackers.com.tw/forum/airfare.php?city_to=MFM");
        Intent it=new Intent(Intent.ACTION_VIEW,uri);
        startActivity(it);
     }
 
-    public void click4(View v)
+    public void click_hotel(View v)
     {
         Uri uri=Uri.parse("http://hotel.backpackers.com.tw/Place/Macau_1.htm");
         Intent it=new Intent(Intent.ACTION_VIEW,uri);
         startActivity(it);
+    }
+
+    public void click_list(View v)
+    {
+        
     }
 }
