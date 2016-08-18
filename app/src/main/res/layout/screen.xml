@@ -3,14 +3,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:descendantFocusability="blocksDescendants">
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="1">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:id="@+id/imageView2"
-        android:scaleType="center"
-        android:src="@drawable/r1_01" />
+        android:scaleType="fitStart"
+        android:src="@drawable/r1_01"
+        android:layout_weight="0.23"
+        android:layout_gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
