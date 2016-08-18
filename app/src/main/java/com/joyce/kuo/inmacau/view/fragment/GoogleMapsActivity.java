@@ -128,7 +128,7 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
 
         LatLng macau = new LatLng(22.2076035,113.5459481);
         CameraPosition cameraPos = new CameraPosition.Builder().target(macau)
-                .zoom(17.0f)
+                .zoom(15.5f)
                 .build();
         CameraUpdate cameraUpt = CameraUpdateFactory
                 .newCameraPosition(cameraPos);

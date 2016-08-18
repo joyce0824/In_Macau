@@ -29,9 +29,6 @@ public class Main2Activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
-
     }
 
 
@@ -47,8 +44,6 @@ public class Main2Activity extends AppCompatActivity {
         Intent it=new Intent(Main2Activity.this,TripActivity.class);
         startActivity(it);
     }
-
-
 
     public void click_ticket(View v)
     {
@@ -85,12 +80,20 @@ public class Main2Activity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == 0) {
-            Toast.makeText(Main2Activity.this, "BB", Toast.LENGTH_SHORT).show();
+
             AlertDialog.Builder builder=new AlertDialog.Builder(Main2Activity.this);
             builder.setTitle("關於我們");
-            builder.setMessage("特別感謝:澳門特別行政區政府旅遊局\n資料來源:來自澳門特別行政區政府旅遊局");
+            builder.setMessage("資料來源:澳門特別行政區政府旅遊局\n\n如有錯誤資訊,煩請聯絡我們，謝謝\n\n");
+            builder.show();
             return true;
         }
+        else {
+            Uri uri = Uri.parse("mailto:jo824.tw@gmail.com");
+            Intent it = new Intent(Intent.ACTION_SENDTO, uri);
+            it.putExtra(Intent.EXTRA_SUBJECT,"關於 In_Macau");
+            startActivity(it);
+        }
+
 
         return super.onOptionsItemSelected(item);
     }

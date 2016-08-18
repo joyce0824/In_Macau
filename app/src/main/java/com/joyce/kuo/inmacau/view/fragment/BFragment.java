@@ -65,9 +65,9 @@ public class BFragment extends Fragment {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Bundle b = new Bundle();
-                    b.putString("id", mylist1.get(position).ID);
-                    b.putString("name", mylist1.get(position).NAME);
-                    b.putString("note", mylist1.get(position).NOTE);
+                    b.putString("id", MyAdapter.data.get(position).ID);
+                    b.putString("name",  MyAdapter.data.get(position).NAME);
+                    b.putString("note",  MyAdapter.data.get(position).NOTE);
                     Intent it = new Intent(getActivity(), DetailActivity.class);
                     it.putExtras(b);
                     startActivity(it);

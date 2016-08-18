@@ -18,7 +18,7 @@ import java.util.ArrayList;
  */
 public class MyAdapter extends BaseAdapter {
     Context context;
-    ArrayList<MR> data;
+   static ArrayList<MR> data;
 
     public MyAdapter(Context c,ArrayList<MR> list)
     {
