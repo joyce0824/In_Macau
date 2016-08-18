@@ -3,18 +3,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="#ccffff"
+    android:background="#E3F2FD"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.joyce.kuo.inmacau.MapActivity">
+    tools:context=".view.MapActivity">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/icon_map"
+        android:src="@drawable/map_min"
         android:id="@+id/image"
-        />
+        android:contentDescription="" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.花地瑪堂區"
+        android:id="@+id/button"
+        android:background="#00000000"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/image"
+        android:onClick="MR1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.花王堂區"
+        android:id="@+id/button2"
+        android:background="#00000000"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:onClick="click_r2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.望德堂區"
+        android:id="@+id/button3"
+        android:background="#00000000"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:onClick="click_r3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.風順堂區"
+        android:id="@+id/button4"
+        android:background="#00000000"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:onClick="click_r4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.大堂區"
+        android:id="@+id/button5"
+        android:background="#00000000"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:onClick="click_r5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.嘉模堂區"
+        android:id="@+id/button6"
+        android:background="#00000000"
+        android:textSize="20dp"
+        android:layout_above="@+id/button7"
+        android:layout_alignParentStart="true"
+        android:onClick="click_r6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.路氹填海區"
+        android:id="@+id/button7"
+        android:background="#00000000"
+        android:textSize="20dp"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentStart="true"
+        android:onClick="click_r7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.聖方濟各堂區"
+        android:id="@+id/button8"
+        android:background="#00000000"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="click_r8" />
 
 </RelativeLayout>

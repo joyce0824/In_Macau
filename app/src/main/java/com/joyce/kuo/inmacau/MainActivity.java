@@ -5,7 +5,10 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import com.joyce.kuo.inmacau.list.ListActivity;
+import com.joyce.kuo.inmacau.view.MapActivity;
+import com.joyce.kuo.inmacau.trip.TripActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void click_view(View v)
+    public void click_map(View v)
     {
 
         Intent it =new Intent(MainActivity.this,MapActivity.class);
@@ -47,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void click_list(View v)
     {
-        
+        Intent it=new Intent(MainActivity.this,ListActivity.class);
+        startActivity(it);
+
     }
 }
